@@ -6,20 +6,73 @@
 
 	<!-- Stylesheet -->
 	<link rel="stylesheet" href="css/styles.css" />	
-	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://codepen.io/manikoth/pen/esmHp"></script>
 </head>
 <body>
     
-    <div class="wrapper">
+<!--     <div class="wrapper">
                 
-        <!-- Get Zip -->
+        Get Zip 
         <input type="text" placeholder="Enter Zip Code">
         <button type="submit" class="btn">Submit</button>
         
-         <!-- Get Weather -->
+         Get Weather
         <div id="weather"></div>
         
-    </div>
+    </div> -->
+
+<!-- Home Screen -->
+<div data-role="page" id="home" class="">
+  
+  <div data-role="header">
+       <h1>Weather</h1>
+  </div>
+   
+  <div data-role="content">
+      
+    <img src="http://placehold.it/300x200" alt="" class="weather-image" />
+    <h1 class="temp">00 F</h1>
+    <h6 class="city">Cheney, WA</h6>
+    
+    <a href="#spokane"
+       data-role="button"
+       data-theme="b"
+       data-transition="slide">Spokane</a>
+    <a href="" 
+       data-role="button"
+       data-theme="b">Cheney</a>
+  </div>
+  
+  <div data-role="footer">
+       <h6>2015</h6>
+  </div>
+   
+</div>
+
+<!-- Spokane Screen -->
+<div data-role="page" id="spokane">
+  
+  <div data-role="header">
+    <a href="#home">Home</a>
+  </div>
+  
+  <div data-role="content">
+    <h1>Spokane</h1>
+    <p>60 degrees & Sunny</p>
+  </div>
+
+  
+</div>
+
+
+
+
+
+
+
+
 
 	
 	<!-- Framework -->
@@ -28,6 +81,14 @@
     <script src="js/simpleweather.js"></script>
     <!-- Us using Framework & Plugin -->
     <script src="js/scripts.js"></script>
+
+    
+
+    
+    
+    
+
+    
     
 </body>
 </html>
